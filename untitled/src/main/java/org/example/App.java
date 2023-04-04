@@ -11,18 +11,18 @@ import org.example.Exercice6.Person;
  * Hello world!
  *
  */
-public class App 
-{
-    public static void main()
-    {
 
+
+public class App
+{
+    public static void main( String[] args )
+    {
         Door door = new Door();
         door.setColor("red");
 
         House house = new House(70,door);
 
         Person person = new Person("Clement",house);
-        person.toString();
-
+        person.display();
     }
 }

@@ -10,11 +10,9 @@ public class Person {
         this.house = house;
     }
 
-    @Override
-    public String toString() {
-        return "Person{" +
-                "nom='" + nom + '\'' +
-                ", house=" + house +
-                '}';
+    public void display(){
+        System.out.println("je m'appelle " + nom + " ; ");
+        house.display();
+        house.door.Display();
     }
 }
