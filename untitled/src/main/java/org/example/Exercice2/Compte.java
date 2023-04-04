@@ -2,23 +2,23 @@ package org.example.Exercice2;
 
 public class Compte {
 
-    static int nbCompte;
+    static int nbCompte = 0;
 
     int code;
     float solde;
 
     public Compte(int code, float solde) {
-        this.code = nbCompte++;
+        this.code = ++nbCompte;
         this.solde = solde;
     }
 
     public void versement(float vers){
-        this.solde = this.solde+vers;
+        solde = solde+vers;
     }
 
     public void retrait(float ret){
-        if(this.solde>=ret){
-            this.solde = this.solde-ret;
+        if(solde>=ret){
+            solde = this.solde-ret;
         }
     }
 

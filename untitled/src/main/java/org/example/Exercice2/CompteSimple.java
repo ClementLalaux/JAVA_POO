@@ -11,8 +11,8 @@ public class CompteSimple extends Compte{
 
     @Override
     public void retrait(float ret) {
-        if (this.solde >= ret + decouvert){
-            this.solde = this.solde = ret;
+        if (solde >= ret + decouvert){
+            solde = solde - ret;
         }
     }
 }

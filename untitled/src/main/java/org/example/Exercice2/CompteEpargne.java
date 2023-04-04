@@ -8,6 +8,6 @@ public class CompteEpargne extends Compte{
     }
 
     public void calculInterets(){
-        this.solde = this.solde + ((this.solde *this.interet)/100);
+        solde = solde + ((this.solde *this.interet)/100);
     }
 }
